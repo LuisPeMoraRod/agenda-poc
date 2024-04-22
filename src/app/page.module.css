@@ -1,230 +1,217 @@
-.main {
+.drag-sample-wrapper {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
 }
 
-.description {
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  font-size: 0.85rem;
-  max-width: var(--max-width);
+.schedule-container {
+  padding-right: 10px;
   width: 100%;
-  z-index: 2;
-  font-family: var(--font-mono);
 }
 
-.description a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
+.title-container {
+  padding-bottom: 10px;
 }
 
-.description p {
-  position: relative;
-  margin: 0;
-  padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius);
+.treeview-external-drag #waiting {
+  height: 100%;
+  padding: 0;
 }
 
-.code {
-  font-weight: 700;
-  font-family: var(--font-mono);
+.treeview-external-drag #waitdetails {
+  width: 95%;
+  float: left;
+  height: 100%;
+  padding: 0;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
-  max-width: 100%;
-  width: var(--max-width);
+.e-schedule.schedule-drag-drop .e-resource-cells.e-parent-node .template-wrap {
+  padding: 3px 0px;
 }
 
-.card {
-  padding: 1rem 1.2rem;
-  border-radius: var(--border-radius);
-  background: rgba(var(--card-rgb), 0);
-  border: 1px solid rgba(var(--card-border-rgb), 0);
-  transition: background 200ms, border 200ms;
+.title-text {
+  font-size: 18px;
+  margin: 0px;
+  font-weight: bold;
+  text-align: center;
 }
 
-.card span {
-  display: inline-block;
-  transition: transform 200ms;
+.treeview-external-drag #waitlist {
+  width: 100%;
+  height: 50%;
+  font-weight: bold;
+  font-family: "Segoe UI";
+  font-size: 12px;
+  padding: 5px 0 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.card h2 {
-  font-weight: 600;
-  margin-bottom: 0.7rem;
-}
-
-.card p {
-  margin: 0;
+.treeview-external-drag #waitcategory {
+  height: 50%;
+  font-family: "Segoe UI";
+  font-size: 10px;
   opacity: 0.6;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  max-width: 30ch;
-  text-wrap: balance;
+  padding-left: 10px;
+  padding-top: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 4rem 0;
+.treeview-external-drag .e-list-text,
+.treeview-external-drag.e-rtl .e-list-text,
+.e-bigger .treeview-external-drag .e-list-text,
+.e-bigger .treeview-external-drag.e-rtl .e-list-text {
+  border: 0.5px solid #e1e7ec;
+  height: 50px;
+  line-height: 15px;
+  padding: 0 5px;
+  width: 220px;
 }
 
-.center::before {
-  background: var(--secondary-glow);
+.treeview-external-drag .e-list-parent,
+.treeview-external-drag.e-rtl .e-list-parent,
+.e-bigger .treeview-external-drag .e-list-parent,
+.e-bigger .treeview-external-drag.e-rtl .e-list-parent {
+  height: 100%;
+  padding: 0 2px;
+}
+
+.treeview-external-drag .e-list-item,
+.e-bigger .treeview-external-drag .e-list-item {
+  height: 100%;
+  padding: 0 0 5px 0;
+}
+
+.treeview-external-drag .e-fullrow,
+.e-bigger .treeview-external-drag .e-fullrow {
+  height: 55px;
+}
+
+.treeview-external-drag .e-list-item.e-hover > .e-fullrow,
+.treeview-external-drag .e-list-item.e-active > .e-fullrow,
+.treeview-external-drag .e-list-item.e-active.e-hover > .e-fullrow,
+.e-bigger .treeview-external-drag .e-list-item.e-hover > .e-fullrow,
+.e-bigger .treeview-external-drag .e-list-item.e-active > .e-fullrow,
+.e-bigger .treeview-external-drag .e-list-item.e-active.e-hover > .e-fullrow {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none !important;
+}
+
+.treeview-external-drag .e-text-content,
+.e-bigger .treeview-external-drag .e-text-content,
+.treeview-external-drag.e-rtl .e-text-content,
+.e-bigger .treeview-external-drag.e-rtl .e-text-content {
+  padding: 0;
+  background-color: inherit;
+}
+
+.e-drag-item.e-treeview.treeview-external-drag,
+.e-bigger .e-drag-item.e-treeview.treeview-external-drag {
+  padding: 0 !important;
+}
+
+.e-schedule.schedule-drag-drop .e-timeline-view .e-resource-left-td,
+.e-schedule.schedule-drag-drop .e-timeline-month-view .e-resource-left-td {
+  width: 160px;
+}
+
+.e-schedule.schedule-drag-drop
+  .e-resource-cells.e-parent-node
+  .specialist-category {
+  padding-left: 30px;
+}
+
+.e-schedule.e-rtl.schedule-drag-drop
+  .e-resource-cells.e-parent-node
+  .specialist-category {
+  padding-right: 30px;
+}
+
+.e-schedule.schedule-drag-drop
+  .e-resource-cells.e-child-node
+  .specialist-category,
+.e-schedule.schedule-drag-drop .e-resource-cells.e-child-node .specialist-name {
+  padding: 5px;
+}
+
+.e-schedule.schedule-drag-drop
+  .e-resource-cells.e-parent-node
+  .specialist-name {
+  padding: 0 10px;
+}
+
+.e-schedule.schedule-drag-drop .e-resource-cells .specialist-name {
+  font-size: 13px;
+}
+
+.e-schedule.schedule-drag-drop .e-resource-cells .specialist-designation {
+  font-size: 10px;
+}
+
+.e-schedule.schedule-drag-drop .specialist-image {
+  width: 45px;
+  height: 40px;
+  float: left;
   border-radius: 50%;
-  width: 480px;
-  height: 360px;
-  margin-left: -400px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-size: 45px;
 }
 
-.center::after {
-  background: var(--primary-glow);
-  width: 240px;
-  height: 180px;
-  z-index: -1;
+.e-device-hover {
+  background-color: #e0e0e0 !important;
 }
 
-.center::before,
-.center::after {
-  content: "";
-  left: 50%;
-  position: absolute;
-  filter: blur(45px);
-  transform: translateZ(0);
+.e-schedule.schedule-drag-drop
+  .e-resource-cells.e-parent-node
+  .specialist-image {
+  display: none;
 }
 
-.logo {
-  position: relative;
-}
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  .card:hover {
-    background: rgba(var(--card-rgb), 0.1);
-    border: 1px solid rgba(var(--card-border-rgb), 0.15);
-  }
-
-  .card:hover span {
-    transform: translateX(4px);
-  }
+.schedule-drag-drop.e-schedule .template-wrap .specialist-image.alice {
+  background-image: url("https://ej2.syncfusion.com/react/demos/src/schedule/images/alice.png");
 }
 
-@media (prefers-reduced-motion) {
-  .card:hover span {
-    transform: none;
-  }
+.schedule-drag-drop.e-schedule .template-wrap .specialist-image.robert {
+  background-image: url("https://ej2.syncfusion.com/react/demos/src/schedule/images/robert.png");
 }
 
-/* Mobile */
-@media (max-width: 700px) {
-  .content {
-    padding: 4rem;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-    margin-bottom: 120px;
-    max-width: 320px;
-    text-align: center;
-  }
-
-  .card {
-    padding: 1rem 2.5rem;
-  }
-
-  .card h2 {
-    margin-bottom: 0.5rem;
-  }
-
-  .center {
-    padding: 8rem 0 6rem;
-  }
-
-  .center::before {
-    transform: none;
-    height: 300px;
-  }
-
-  .description {
-    font-size: 0.8rem;
-  }
-
-  .description a {
-    padding: 1rem;
-  }
-
-  .description p,
-  .description div {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    width: 100%;
-  }
-
-  .description p {
-    align-items: center;
-    inset: 0 0 auto;
-    padding: 2rem 1rem 1.4rem;
-    border-radius: 0;
-    border: none;
-    border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
-    background: linear-gradient(
-      to bottom,
-      rgba(var(--background-start-rgb), 1),
-      rgba(var(--callout-rgb), 0.5)
-    );
-    background-clip: padding-box;
-    backdrop-filter: blur(24px);
-  }
-
-  .description div {
-    align-items: flex-end;
-    pointer-events: none;
-    inset: auto 0 0;
-    padding: 2rem;
-    height: 200px;
-    background: linear-gradient(
-      to bottom,
-      transparent 0%,
-      rgb(var(--background-end-rgb)) 40%
-    );
-    z-index: 1;
-  }
+.schedule-drag-drop.e-schedule .template-wrap .specialist-image.robson {
+  background-image: url("https://ej2.syncfusion.com/react/demos/src/schedule/images/robson.png");
 }
 
-/* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
-  .grid {
-    grid-template-columns: repeat(2, 50%);
-  }
+.schedule-drag-drop.e-schedule .template-wrap .specialist-image.laura {
+  background-image: url("https://ej2.syncfusion.com/react/demos/src/schedule/images/laura.png");
 }
 
-@media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
-  }
-
-  .logo {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
-  }
+.schedule-drag-drop.e-schedule .template-wrap .specialist-image.nancy {
+  background-image: url("https://ej2.syncfusion.com/react/demos/src/schedule/images/nancy.png");
 }
 
-@keyframes rotate {
-  from {
-    transform: rotate(360deg);
+.schedule-drag-drop.e-schedule .template-wrap .specialist-image.margaret {
+  background-image: url("https://ej2.syncfusion.com/react/demos/src/schedule/images/margaret.png");
+}
+
+@media (max-width: 550px) {
+  .drag-sample-wrapper {
+    display: block;
   }
-  to {
-    transform: rotate(0deg);
+  .schedule-container {
+    padding-bottom: 10px;
   }
+  .treeview-external-drag.e-treeview,
+  .e-bigger .treeview-external-drag.e-treeview {
+    width: 250px;
+  }
+  .e-bigger .treeview-external-drag.e-treeview.e-drag-item {
+    position: relative !important;
+  }
+}
+.e-disble-not-allowed {
+  cursor: unset !important;
+}
+
+.e-drag-item.treeview-external-drag .e-icon-expandable {
+  display: none;
 }

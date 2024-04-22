@@ -9,16 +9,33 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@syncfusion/ej2-base": "25.1.35",
+    "@syncfusion/ej2-buttons": "25.1.39",
+    "@syncfusion/ej2-calendars": "25.1.40",
+    "@syncfusion/ej2-documenteditor": "25.1.40",
+    "@syncfusion/ej2-icons": "25.1.35",
+    "@syncfusion/ej2-lists": "25.1.39",
+    "@syncfusion/ej2-navigations": "25.1.40",
+    "@syncfusion/ej2-pivotview": "25.1.39",
+    "@syncfusion/ej2-react-base": "25.1.35",
+    "@syncfusion/ej2-react-calendars": "25.1.40",
+    "@syncfusion/ej2-react-dropdowns": "^25.1.40",
+    "@syncfusion/ej2-react-grids": "^25.1.40",
+    "@syncfusion/ej2-react-navigations": "^25.1.40",
+    "@syncfusion/ej2-react-popups": "25.1.39",
+    "@syncfusion/ej2-react-schedule": "25.1.39",
+    "@syncfusion/ej2-schedule": "25.1.39",
+    "@syncfusion/ej2-splitbuttons": "25.1.38",
+    "next": "14.2.2",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.2"
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "14.2.2"
+    "eslint-config-next": "14.2.2",
+    "typescript": "^5"
   }
 }
